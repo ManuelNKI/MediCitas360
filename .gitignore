@@ -1,0 +1,65 @@
+## OBLIGATORIO .NET: Carpetas de compilación e intermedios
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+[Log]/
+
+## Archivos de usuario y configuraciones personalizadas del IDE
+*.user
+*.userosscache
+*.sln.docstates
+
+## Especificaciones de Visual Studio (.vs)
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.clw
+*.ncb
+*.pfx
+*.ids
+*.suo
+*.pdb
+*.force
+*.placeholder
+
+## Especificaciones de Visual Studio Code
+.vscode/
+!.vscode/extensions.json
+.history/
+.ionide/
+
+## Especificaciones de JetBrains Rider / Resharper
+.idea/
+*.sln.iml
+
+## Secretos y configuraciones sensibles de la app
+# Si manejas contraseñas reales en local, descomenta la siguiente línea:
+# appsettings.Development.json
+usersecrets.json
+secrets.json
+*.pem
+
+## Paquetes NuGet restaurados (evita subir gigas de dependencias)
+*.nuget.props
+*.nuget.targets
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Archivos temporales del sistema operativo
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+
+## Archivos de configuración específicos del entorno
+appsettings.json
