@@ -17,14 +17,14 @@ public class MedicosController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetMedicos()
     {
-        var medicos = await _medicoRepository.GetMedicosAsync();
+        var medicos = await _medicoRepository.GetAllAsync();
         return Ok(medicos);
     }
 
     [HttpGet("{id}")]
     public async Task<IActionResult> GetMedicoById(int id)
     {
-        var medico = await _medicoRepository.GetMedicoByIdAsync(id);
+        var medico = await _medicoRepository.GetByIdAsync(id);
         if (medico == null)
         {
             return NotFound(new { error = "Médico no encontrado" });
